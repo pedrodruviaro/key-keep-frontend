@@ -1,9 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({
+  layout: 'public',
+})
+
+useSeoMeta({
+  title: 'Your password manager',
+  description:
+    'Keep your passwords safe and secure with KeyKeep. Never have to worry about forgetting your important credentials again.',
+})
+</script>
 
 <template>
-  <div>
-    <h1>Home page</h1>
-
-    <Button label="Verify" />
-  </div>
+  <LandingPageHero />
 </template>

@@ -1,5 +1,15 @@
+<script setup lang="ts">
+useHead({
+  titleTemplate: (title) => {
+    return title ? `${title} - KeyKeep` : 'KeyKeep'
+  },
+})
+</script>
+
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
